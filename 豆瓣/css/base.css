@@ -1,0 +1,415 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+        url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+        url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-style: normal;
+}
+
+/* web字体 */
+.w {
+    width: 950px;
+    margin: auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+body {
+    padding-top: 30px;
+}
+
+/* 导航栏部分start */
+.header {
+    height: 60px;
+}
+
+.header .w {
+    position: relative;
+}
+
+.logo {
+    width: 160px;
+    height: 34px;
+
+}
+
+.logo h1 {
+    margin: 0;
+    text-indent: -100em;
+    overflow: hidden;
+}
+
+.logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/logo.png) center no-repeat;
+}
+
+.search {
+    width: 280px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    border: #c3c3c3 1px solid;
+}
+
+.search button,
+.search input {
+    float: left;
+    border: none;
+    height: 30px;
+    background-color: #fff;
+    outline: none;
+}
+
+.search input {
+    width: 245px;
+    font-size: 13px;
+    color: #c3c3c3;
+    padding-left: 5px;
+}
+
+.search button {
+    width: 30px;
+}
+
+.search i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #c3c3c3;
+}
+
+.nav {
+    width: 482px;
+    height: 21px;
+    margin: 5px 0;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li {
+    width: 40px;
+    height: 20px;
+    margin-left: 20PX;
+    text-indent: -200em;
+    overflow: hidden;
+}
+
+.nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/nav.png) no-repeat;
+}
+
+li .movie {
+    background-position: -60px 0;
+}
+
+li .music {
+    background-position: -120px 0;
+}
+
+li .group1 {
+    background-position: -180px 0;
+}
+
+li .city1 {
+    background-position: -238px 0;
+}
+
+li .FM {
+    background-position: -298px 0;
+}
+
+li .time {
+    background-position: -360px 0;
+}
+
+li .dou {
+    background-position: right;
+}
+
+/* 导航栏部分end */
+/* 头部开始 */
+.banner {
+    width: 100%;
+    height: 304px;
+    background: url(../images/bd_bg.jpg) no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 305px) top;
+    ;
+    background-color: #edf4ed;
+}
+
+.banner .w {
+    position: relative;
+
+}
+
+.w .download {
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    top: 92px;
+    left: 475px;
+}
+
+.download h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #111;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.download h2 {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: #00B51D;
+    font-size: 12px;
+    line-height: 30PX;
+}
+
+.download a {
+    width: 130px;
+    height: 30px;
+    display: block;
+    font-weight: normal;
+    color: #FFF;
+    text-indent: 1.2em;
+}
+
+.download img {
+    width: 28px;
+    height: 28px;
+}
+
+.join {
+    width: 290px;
+    height: 256px;
+    padding: 30px 10px 10px;
+
+}
+
+.join_top ul {
+    border-bottom: 1px solid #ececec;
+}
+
+.join_top li {
+    display: inline-block;
+    width: 140px;
+    height: 26px;
+    text-indent: 2.5em;
+}
+
+ul .fot {
+    text-indent: 2em;
+    border-bottom: 1px solid #494949;
+    font-weight: 600;
+}
+
+.join_top a {
+    font-size: 13px;
+    color: #333;
+    line-height: 26px;
+}
+
+.tips li {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
+.tips a {
+    color: #41ac52;
+}
+
+.input {
+    height: 35px;
+    background-color: white;
+    border: 1px solid #e4e6e5;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+.input span {
+    font-weight: bold;
+    height: 33px;
+    line-height: 33px;
+    margin-right: 2px;
+    border-right: 1px solid #e4e6e5;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.input input {
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+
+.retest {
+    background-color: white;
+    border-right: 1px solid #e4e6e5;
+}
+
+.retest input {
+    width: 190px;
+}
+
+.retest a {
+    color: #41ac52;
+    font-size: 13px;
+}
+
+.shuru .retest {
+    margin-top: 12px;
+}
+
+.load a {
+    margin: 10px auto 0;
+    display: block;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    font-weight: 400;
+    background-color: rgba(66, 189, 86, .5);
+    text-align: center;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.rember {
+    margin-top: 10px;
+    width: 288px;
+    height: 17px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.rember input {
+    margin-left: 4px;
+}
+
+.rember label {
+    font: normal 13px;
+    min-height: 100%;
+    color: #333;
+}
+
+.rember a {
+    color: #41ac52;
+}
+
+.join-load {
+    margin-top: 10px;
+}
+
+.join-load li {
+    height: 22px;
+    display: inline-block;
+}
+
+.join-load li:first-child {
+    color: #9b9b9b;
+    font-size: 11px;
+    line-height: 22px;
+    position: relative;
+    top: -6px;
+}
+
+.join-load li:nth-child(2),
+.join-load li:nth-child(3) {
+    width: 34px;
+    height: 22px;
+
+}
+
+.join-load a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-left: 12px;
+    text-indent: -20em;
+    overflow: hidden;
+}
+
+.join-load .wechat {
+    background: url(../images/wechat.png) no-repeat;
+    background-size: 22px 22px;
+}
+
+.join-load .sina {
+    background: url(../images/sina.png) no-repeat;
+    background-size: 22px 22px;
+}
+
+.xiazai {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.xiazai img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 头部结束 */
+/* 底部开始 */
+.footer .w {
+    height: 131px;
+    border-top: 1px dashed #dcdcdc;
+    padding: 14px 0;
+    margin-top: 30px;
+}
+.footer_l li { 
+    color: #999;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footer_l a {
+    cursor: pointer;
+}
+.footer_l a:visited {
+    color: #669;
+}
+.footer_l a:link {
+    color: #37a;
+}
+.footer_r span a {
+    color: #37a;
+    font-size: 12px;
+}
+/* 底部结束 */
