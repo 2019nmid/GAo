@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <div class="top">
+        <div class="w">
+            <img src="images/bg.png">
+        </div>
+    </div>
+    <div class="center">
+        <div class="w">
+            <i>登录</i>
+            <div class="left" id="code">
+                <div id="asd">
+                    <i></i>
+                    <img src="images/code.png" class="qcode">
+                </div>
+            <img src="images/bg_C.png" class="hide dis" id="bgc">
+
+            </div>
+            <div class="container">
+                <input placeholder="请输入账号" />
+                <input type="password" placeholder="请输入密码" />
+                <div id="captcha" style="position: relative"></div>
+                <div id="msg"></div>
+            </div>
+            <script src="index.js"></script>
+            <script>
+                jigsaw.init(document.getElementById('captcha'), function () {
+                    document.getElementById('msg').innerHTML = '登录成功！'
+                })
+                        alert("请联网查看，做的实在粗糙，而且大部分都是模仿（照着写）");
+                   
+            </script>
+        </div>
+
+    </div>
+    <script>
+        document.getElementById("asd").onmouseover = function () {
+            document.getElementsByClassName("qcode")[0].onmouseover = function () {
+                document.getElementById("asd").className = "hide";
+                document.getElementById("bgc").className = "dis";
+            };
+            return false;
+        }
+    </script>
+</body>
+
+</html>
